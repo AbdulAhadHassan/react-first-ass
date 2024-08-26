@@ -2,40 +2,32 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Img from './comp/ImgCom'
+import Gallery from './gallery'
 
 function App() {
-  const [count, setCount] = useState(0)
-  let arr = [2,3,5,8]
-  let text = arr.map(prot) + " ";
-  function prot (element){
-    return element * 2
-  }
+  
+
 
   return (
-    // <>
-    //   <div>
-    //     <a href="https://vitejs.dev" target="_blank">
-    //       <img src={viteLogo} className="logo" alt="Vite logo" />
-    //     </a>
-    //     <a href="https://react.dev" target="_blank">
-    //       <img src={reactLogo} className="logo react" alt="React logo" />
-    //     </a>
-    //   </div>
-    //   <h1>Vite + React</h1>
-    //   <div className="card">
-    //     <button onClick={() => setCount((count) => count + 1)}>
-    //       count is {count}
-    //     </button>
-    //     <p>
-    //       Edit <code>src/App.jsx</code> and save to test HMR
-    //     </p>
-    //   </div>
-    //   <p className="read-the-docs">
-    //     Click on the Vite and React logos to learn more
-    //   </p>
-    // </>
+  
     <div>
-      <p>{text}</p>
+      <Gallery/> 
+
+       {/* <div  class="flex flex-col flex-wrap gap-3 w-60" >
+        <div onClick={()=>getImg(url.imgscr)}>
+          <Img url={"https://i.pinimg.com/564x/be/f0/cf/bef0cfe3fd41018f40b01b37d7aa146d.jpg"} /> 
+        </div>
+        <div>
+        <Img url={"https://i.pinimg.com/564x/03/2e/4f/032e4f929e89b0482cd8be1b7d469e26.jpg"} /> 
+        </div>
+        <div>
+        <Img url={"https://i.pinimg.com/564x/ac/b1/0e/acb10e9810a1bc86be4553f2ca25eab5.jpg"} /> 
+        </div>
+      </div>
+      <div>
+        <Img url={"https://i.pinimg.com/236x/52/82/8c/52828cf7eff6f054bfef804abcfe2ac4.jpg"} />
+      </div>   */}
     </div>
   )
 }
