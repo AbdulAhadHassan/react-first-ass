@@ -12,6 +12,9 @@ function App() {
   return (
   
     <div>
+      <h1 className="text-center py-5">
+                Gallary
+      </h1>
       <Gallery/> 
 
        {/* <div  class="flex flex-col flex-wrap gap-3 w-60" >
